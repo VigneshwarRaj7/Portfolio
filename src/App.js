@@ -1,10 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import { Outlet } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 function App() {
+ 
+ 
+ 
+
+
   return (
     <div className="App">
-      <header className="App-header">
+   
+        
+        <div>
+          <Header/>
+          <Outlet/>
+        </div>
+      
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +34,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      
     </div>
   );
 }

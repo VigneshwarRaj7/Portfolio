@@ -1,13 +1,80 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
+} */
+/* 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply bg-yellow-300;
 }
+#btn{
+               
+                display: inline-block; 
+                background-color: orange; 
+                padding: 7px; 
+                box-shadow: 7px 10px 1px #888888;
+              
+}
+#btn:hover{
+               
+  transform: scale(1.1);
+
+}
+#btn-mini{
+               
+  display: inline-block; 
+  background-color: orange; 
+  padding: 5px; 
+  box-shadow: 4px 6px 0px #888888;
+  
+
+}
+#btn-mini:hover{
+               
+transform: scale(1.2);
+box-shadow: 4px 6px 0px #888888;
+cursor: pointer;
+}
+#logo{
+  
+  box-shadow: 4px 6px 0px #888888 ; /* Shadow effect */
+  transition: box-shadow 0.3s ease; 
+}
+#plus-container {
+  position: relative;
+  width: 100px; /* Width of the horizontal part of the plus */
+  height: 40px; /* Thickness of the plus */
+  background-color: #007bff; /* Color of the plus */
+  margin: 20px;
+   box-shadow: 4px 6px 0px #888888 ; /* Shadow for the horizontal part */
+
+}
+
+#plus-container::before,
+#plus-container::after {
+  content: '';
+  position: absolute;
+  background-color: #007bff; /* Same color as the container */
+ /* Shadow for the vertical parts */
+
+}
+
+#plus-container::before {
+  width: 40px; /* Thickness of the plus */
+  height: 100px; /* Height of the vertical part of the plus */
+  top: -30px; /* Center the vertical part */
+
+  left: 30px; /* Align with the horizontal center */
+}
+
