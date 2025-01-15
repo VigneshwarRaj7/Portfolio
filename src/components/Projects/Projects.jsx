@@ -21,7 +21,7 @@ const Projects = ()=>{
     return(
         <section id="projects">
         <div className="mb-20">
-            <h1 className="font-techno mt-10  text-center text-4xl font-extrabold">Projects</h1>
+            <h1 className="font-techno  text-center text-4xl font-extrabold">Projects</h1>
             <motion.button initial={{ scale: 0 }} animate={{ scale: 1 }} />
 
             

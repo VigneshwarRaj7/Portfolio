@@ -16,7 +16,7 @@ import github from '../../assets/github-light.svg';
 function Experience() {
   return (
     <div>
-          <h1 className="font-techno mt-4 mb-5 text-center text-5xl font-extrabold">Experience</h1>
+          <h1 className="font-techno  mb-5 text-center text-5xl font-extrabold">Experience</h1>
           <div className='text-lg'>
           <p class="ml-28 mr-28 mb-3 font-normal  font-techno"> 
                 I worked as a frontend developer for Tata Consultancy Services for around 2.5 years. I mainly used ReactJS
