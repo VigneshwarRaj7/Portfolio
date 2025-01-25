@@ -30,20 +30,20 @@ const Home = ()=>{
 
         
        <section id="home">
-       <motion.div className=" mt-12 -2 mx-20  flex   z-10  border-8  font-techno rounded-3xl border-orange-400 mb-16"
+       <motion.div className=" mt-12 mx-4 lg:mx-20 flex flex-col lg:flex-row  justify-between z-20 border-8 font-techno rounded-3xl border-orange-400 mb-16"
        initial={{y:-2050}}
        animate={{y:0}}
        transition={{delay:0.3,duration:1,type:'spring'}}
        >
         
-      <div>
-           <motion.img src={plus} className="w-12/12 min-w-[530px] z-0 max-w-[530px]  mt-20 border-0  " 
+      <div className="flex flex-col items-center mt-40  lg:justify-start w-full lg:w-1/3">
+           <motion.img src={plus} className=" z-10 w-8/12  border-0 lg:w-6/12 " 
            initial={{y:-2050}}
            animate={{y:0}}
            transition={{delay:0.3,duration:0.1,type:'spring'}}
            ></motion.img>
        </div>
-       <div className="  justify-center  flex flex-col    font-techno w-f">
+       <div className=" my-6 flex flex-col items-center justify-center text-center lg:items-start  lg:text-left w-full lg:w-1/3 px-4">
            
            <motion.img src={heroImg} className="w-80 h-80 -ml-44 rounded-full  " 
            initial={{y:-2050}}
