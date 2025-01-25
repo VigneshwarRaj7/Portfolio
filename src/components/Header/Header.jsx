@@ -29,7 +29,7 @@ const Header = () => {
           className="font-techno font-semibold text-xl ml-20"
           >Home </motion.button>  </Link> </div>
         {/* Desktop Menu */}
-        <ul className="hidden   md:flex  xl:mr-11   w-full justify-end space-x-14 font-techno font-semibold text-xl  ">
+        <ul className="hidden   md:flex  xl:mr-11    w-full justify-end space-x-14 font-techno font-semibold text-xl  ">
         
 
          
