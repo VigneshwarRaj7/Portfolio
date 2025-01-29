@@ -26,7 +26,7 @@ const Header = () => {
            initial={{y:-2050}}
            animate={{y:0}}
            transition={{delay:0.4,duration:1,type:'spring'}}
-          className="font-techno font-semibold text-xl ml-20"
+          className="font-techno font-semibold text-xl  lg:ml-20"
           >Home </motion.button>  </Link> </div>
         {/* Desktop Menu */}
         <ul className="hidden   md:flex  xl:mr-11    w-full justify-end space-x-14 font-techno font-semibold text-xl  ">

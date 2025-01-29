@@ -22,7 +22,7 @@ import latteArt2 from '../../assets/latte art/latteArt2.jpeg';
 import latteArt3 from '../../assets/latte art/latteArt3.jpeg';
 import latteArt4 from '../../assets/latte art/latteArt4.jpeg';
 import latteArt5 from '../../assets/latte art/latteArt5.jpeg';
-
+import { Typewriter } from 'react-simple-typewriter';
 const AboutMe = () => {
 
   let art = [vtv, oblivion, prsionBreak, rose, ladyWatch, huggies, collageArt, peakyBlinder, bts]; 
@@ -53,6 +53,7 @@ const AboutMe = () => {
                             >challenge
                     </motion.button>
                         <br/>
+                        
                          > I am a professional cricket and a basketball player. 
                             <br/>
                          > I also do some sketching in leisure time and below are some of the paintings. 

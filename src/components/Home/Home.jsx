@@ -10,6 +10,7 @@ import { useState } from "react"
 import { Menu, X } from "lucide-react";
 import vr from "../../assets/vr.jpg"
 import { Link } from "react-router-dom"
+import { Typewriter } from "react-simple-typewriter"
 
 import { HashLink } from "react-router-hash-link";
 
@@ -30,22 +31,22 @@ const Home = ()=>{
 
         
        <section id="home">
-       <motion.div className=" mt-12 mx-4 lg:mx-20 flex flex-col lg:flex-row  justify-between z-20 border-8 font-techno rounded-3xl border-orange-400 mb-16"
+       <motion.div className="  mt-12  lg:mx-20 flex flex-row  justify-between z-20 lg:border-8 font-techno rounded-3xl border-orange-400 mb-16  "
        initial={{y:-2050}}
        animate={{y:0}}
        transition={{delay:0.3,duration:1,type:'spring'}}
        >
         
-      <div className="flex flex-col items-center mt-40  lg:justify-start w-full lg:w-1/3">
-           <motion.img src={plus} className=" z-10 w-8/12  border-0 lg:w-6/12 " 
+      <div className=" hidden md:block items-center mt-40 w-1/3">
+           <motion.img src={plus} className="hidden md:block z-10 w-8/12 ml-8 border-0  2xl:w-80 " 
            initial={{y:-2050}}
            animate={{y:0}}
            transition={{delay:0.3,duration:0.1,type:'spring'}}
            ></motion.img>
        </div>
-       <div className=" my-6 flex flex-col items-center justify-center text-center lg:items-start  lg:text-left w-full lg:w-1/3 px-4">
-           
-           <motion.img src={heroImg} className="w-80 h-80 -ml-44 rounded-full  " 
+       <div className=" my-6 flex flex-col  text-center items-start   w-full lg:w-1/3 px-4">
+       {/* md:w-80 h-80 -ml-44 rounded-full */}
+           <motion.img src={heroImg} className=" mx-auto rounded-full md:-ml-44   " 
            initial={{y:-2050}}
            animate={{y:0}}
            transition={{delay:0.7,duration:1,type:'spring'}}
@@ -56,20 +57,54 @@ const Home = ()=>{
            animate={{y:0}}
            transition={{delay:0.8,duration:1,type:'spring'}}
            >
-           Vignesh Raj
+             <Typewriter
+                     words={[
+                     ' Vignesh Raj'
+                     ]}
+                     
+                     cursorStyle="|"
+                     typeSpeed={450}
+                     deleteSpeed={0}
+                     delaySpeed={1}
+                    
+                   />
+           
            </motion.h1>
            
            <motion.h1 className='text-3xl font-semibold mb-2 -ml-[197px] '
              initial={{y:-2050}}
              animate={{y:0}}
              transition={{delay:0.8,duration:1,type:'spring'}}
-           >Software Engineer</motion.h1>
+           > <Typewriter
+           words={[
+           ' Software Engineer'
+           ]}
+           
+           cursorStyle="|"
+           typeSpeed={250}
+           deleteSpeed={0}
+           delaySpeed={1}
+          
+         /></motion.h1>
            <motion.p className="text-xl -ml-32 text-center -ml-[450px]  "
              initial={{y:-2050}}
              animate={{y:0}}
-             transition={{delay:0.8,duration:1,type:'spring'}}
+             transition={{delay:0,duration:1,type:'spring'}}
            >
-               A passionate software Developer with nearly 2.5 years of professional experience in <span className="font-bold">ReactJS</span>, TypeScript, Javascript, Tailwind and other web development technologies.
+            
+             <Typewriter
+                     words={[
+                     'A passionate software Developer with nearly 2.5 years of professional experience in ReactJS, TypeScript, Javascript, Tailwind and other web development technologies.'
+                     ]}
+                     cursor
+                     cursorStyle="|"
+                     typeSpeed={50}
+                     deleteSpeed={0}
+                     delaySpeed={1}
+                    
+                   />
+           
+           
            </motion.p>  
            <a href={cv} download> 
             <motion.button id="btn-mini" className="mt-4 -ml-[78px] text-2xl font-techno "
@@ -106,6 +141,8 @@ const Home = ()=>{
        
 
        </motion.div>
+
+       
        </section>   
      
     )
@@ -116,70 +153,3 @@ export default Home;
 
 
 
-// <div>
-// <motion.img src={plus} className="w-12/12 min-w-[530px] max-w-[530px] -z-10 mt-20 border-0  " 
-// initial={{y:-2050}}
-// animate={{y:0}}
-// transition={{delay:0.3,duration:0.1,type:'spring'}}
-// ></motion.img>
-// </div>
-// <div className="my-4  flex flex-col mx-36   font-techno w-f">
-
-// <motion.img src={heroImg} className="w-80 h-80 -ml-44 rounded-full  " 
-// initial={{y:-2050}}
-// animate={{y:0}}
-// transition={{delay:0.7,duration:1,type:'spring'}}
-// ></motion.img>
-
-// <motion.h1 className='-ml-52 text-5xl font-bold mt-4 mb-2'
-// initial={{y:-2050}}
-// animate={{y:0}}
-// transition={{delay:0.8,duration:1,type:'spring'}}
-// >
-// Vignesh Raj
-// </motion.h1>
-
-// <motion.h1 className='text-3xl font-semibold mb-2 -ml-[197px] '
-//   initial={{y:-2050}}
-//   animate={{y:0}}
-//   transition={{delay:0.8,duration:1,type:'spring'}}
-// >Software Engineer</motion.h1>
-// <motion.p className="text-xl -ml-32 text-center -ml-[450px]  "
-//   initial={{y:-2050}}
-//   animate={{y:0}}
-//   transition={{delay:0.8,duration:1,type:'spring'}}
-// >
-//     A passionate software Developer with nearly 2.5 years of professional experience in <span className="font-bold">ReactJS</span>, TypeScript, Javascript, Tailwind and other web development technologies.
-// </motion.p>  
-// <a href={cv} download> 
-//  <motion.button id="btn-mini" className="mt-4 -ml-[78px] text-2xl font-techno "
-//   initial={{y:-2050}}
-//   animate={{y:0}}
-//   transition={{delay:0.9,duration:1,type:'spring'}}
-//  >Resume</motion.button>
-// </a> 
-// </div>
-
-// <div className=" flex flex-col  ">
-// <motion.img src={gmail} className="min-w-16 h-16 mt-48 -ml-48  rounded-full  " id="btn-mini" 
-// initial={{y:-2050}}
-// animate={{y:0}}
-// transition={{delay:1.0,duration:1,type:'spring'}}
-// ></motion.img>
-// <motion.img src={githubLight} className="min-w-16 h-16 mt-4 -ml-[267px]  rounded-full "  id="btn-mini"
-//  initial={{y:-2050}}
-//  animate={{y:0}}
-//  transition={{delay:1.1,duration:1,type:'spring'}}
-// ></motion.img>
-// <motion.img src={linkedinLight} className="min-w-16 h-16  -mt-[60px] -ml-[115px] rounded-full  " id="btn-mini" 
-//  initial={{y:-2050}}
-//  animate={{y:0}}
-//  transition={{delay:1.2,duration:1,type:'spring'}}
-// ></motion.img>
-// <motion.img src={discord} className="min-w-16 h-16  mt-[12px]  -ml-[190px] rounded-full  " id="btn-mini" 
-//  initial={{y:-2050}}
-//  animate={{y:0}}
-//  transition={{delay:1.3,duration:1,type:'spring'}}
-// ></motion.img>
-
-// </div> 
