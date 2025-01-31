@@ -12,19 +12,31 @@ import snap from '../../assets/Projects/snap.jpg';
 import { Typewriter } from 'react-simple-typewriter';
 import { useState } from "react";
 
-
+import ProjectCard from "../ProjectCard/ProjectCard";
 
 
 
 const Projects = ()=>{
     const [secondTyping, setSecondTyping] = useState(false);
 
+    let football = [footballPlayerSalary,'Football Player Salary Prediction','Prepared machine learning models (linear regression and polynomial regression) to find the correlation between different features like matches, wins, goals scored, and etc. This correlation was used to predict the salary of a football player.','This model was built using Python and its libraries ( sklearn, numpy, & matplotlib).',pythonSvg];
+    let voiceAssitant = [snap,'voice assistant for mute people','Developed an innovative communication system for visually and speech-impaired individuals.Utilized sound patterns (e.g., claps, snaps) for  analyzing frequency ranges and time intervals for efficient recognition. Enabled a user-friendly alternative to traditional voice assistants like Siri and Google Assistant.','The model was built using Python, PyAudio, and Librosa.',pythonSvg];
+    let music = [musicMental, 'Music Effect on Mental Health','The data set includes information about the diﬀerent mental illness [anxiety, depression, OCD, & insomnia] of people, their favorite genre [Jazz, R&B, etc.], and their listening time. KNN and decision tree classifier has been performed to find out how different music genre coudl affect the mental health of people.','This model was built using Python and its libraries ( sklearn, numpy, & matplotlib).',pythonSvg]
 
-    
     return(
         <section id="projects">
         <div className="">
-            <h1 className="font-techno mb-10  text-center text-4xl font-extrabold">Projects</h1>
+            <h1 className="font-techno mb-10  text-center text-4xl font-extrabold"><Typewriter
+          words={[
+          'PROJECTS'
+          ]}
+          cursor
+          cursorStyle="."
+          typeSpeed={200}
+          deleteSpeed={0}
+          delaySpeed={10}
+          onComplete={() => setSecondTyping(true)}
+           /></h1>
            
 
             
@@ -42,9 +54,9 @@ const Projects = ()=>{
                         animate={{x:0}}
                         transition={{delay:0.5,duration:1,type:'spring'}}
                     >
-                    <img class=" rounded-full max-w-[100%] overflow-hidden min-w-[576px] max-h-[384px] mt-[64px] ml-[36px]" src={footballPlayerSalary}  />
+                    <img class=" rounded-full max-w-[100%] overflow-hidden min-w-[576px] max-h-[384px] my-[20px]  ml-[36px]" src={footballPlayerSalary}  />
                     </motion.div>   
-                       <div className="mt-[64px] ml-6" >
+                       <div className="mt-[10px] ml-6" >
                        <a href="#">
                             <h5 class="mb-2 mr-28 text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-techno text-center ">Football Player Salary Prediction</h5>
                         </a>
@@ -259,8 +271,8 @@ const Projects = ()=>{
                
             </div>
 
-            
-
+            <ProjectCard data={football}></ProjectCard>
+            <ProjectCard data={voiceAssitant}></ProjectCard>               
         </div>
         </section>
     )

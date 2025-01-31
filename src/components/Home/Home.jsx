@@ -31,7 +31,7 @@ const Home = ()=>{
 
         
        <section id="home">
-       <motion.div className="  mt-12  lg:mx-20 flex flex-row  justify-between z-20 lg:border-8 font-techno rounded-3xl border-orange-400 mb-16  "
+       <motion.div className="  mt-12  lg:mx-20 md:flex md:flex-row  justify-between z-20 lg:border-8 font-techno rounded-3xl border-orange-400 mb-16  "
        initial={{y:-2050}}
        animate={{y:0}}
        transition={{delay:0.3,duration:1,type:'spring'}}
@@ -44,7 +44,7 @@ const Home = ()=>{
            transition={{delay:0.3,duration:0.1,type:'spring'}}
            ></motion.img>
        </div>
-       <div className=" my-6 flex flex-col  text-center items-start   w-full lg:w-1/3 px-4">
+       <div className=" md:my-6 flex flex-col  text-center items-start   w-full lg:w-1/3 px-4">
        {/* md:w-80 h-80 -ml-44 rounded-full */}
            <motion.img src={heroImg} className=" mx-auto rounded-full md:-ml-44   " 
            initial={{y:-2050}}
@@ -52,7 +52,7 @@ const Home = ()=>{
            transition={{delay:0.7,duration:1,type:'spring'}}
            ></motion.img>
          
-           <motion.h1 className='-ml-52 text-5xl font-bold mt-4 mb-2'
+           <motion.h1 className='text-4xl ml-auto mr-auto md:-ml-52 md:text-5xl font-bold mt-4 mb-2'
            initial={{y:-2050}}
            animate={{y:0}}
            transition={{delay:0.8,duration:1,type:'spring'}}
@@ -71,7 +71,7 @@ const Home = ()=>{
            
            </motion.h1>
            
-           <motion.h1 className='text-3xl font-semibold mb-2 -ml-[197px] '
+           <motion.h1 className='mx-auto ml-auto text-2xl md:text-3xl font-semibold mb-2 md:-ml-[197px] '
              initial={{y:-2050}}
              animate={{y:0}}
              transition={{delay:0.8,duration:1,type:'spring'}}
@@ -86,7 +86,7 @@ const Home = ()=>{
            delaySpeed={1}
           
          /></motion.h1>
-           <motion.p className="text-xl -ml-32 text-center -ml-[450px]  "
+           <motion.p className=" justify-center md:text-xl  text-center md:-ml-[450px]  "
              initial={{y:-2050}}
              animate={{y:0}}
              transition={{delay:0,duration:1,type:'spring'}}
@@ -107,7 +107,7 @@ const Home = ()=>{
            
            </motion.p>  
            <a href={cv} download> 
-            <motion.button id="btn-mini" className="mt-4 -ml-[78px] text-2xl font-techno "
+            <motion.button id="btn-mini" className="  ml-[80%] mt-6 md:-ml-[78px] text-3xl font-techno "
              initial={{y:-2050}}
              animate={{y:0}}
              transition={{delay:0.9,duration:1,type:'spring'}}
@@ -115,8 +115,47 @@ const Home = ()=>{
            </a> 
        </div>
        
-       <div className=" flex flex-col  ">
-           <motion.img src={gmail} className="min-w-16 h-16 mt-48 -ml-48  rounded-full  " id="btn-mini" 
+  
+       <div className="flex mt-8 gap-6 justify-center  md:flex md:flex-col">
+    <motion.img src={gmail} className="w-16 h-16 md:min-w-16 md:h-16 md:-ml-48 rounded-full md:-mt-20" id="btn-mini"
+      initial={{ y: -2050 }}
+      animate={{ y: 0 }}
+      transition={{ delay: 1.0, duration: 1, type: 'spring' }}
+    />
+    <motion.img src={githubLight} className="w-16 h-16 md:min-w-16 md:h-16 md:mt-4 md:-ml-[275px] rounded-full" id="btn-mini"
+      initial={{ y: -2050 }}
+      animate={{ y: 0 }}
+      transition={{ delay: 1.1, duration: 1, type: 'spring' }}
+    />
+    <motion.img src={linkedinLight} className="w-16 h-16 md:min-w-16 md:h-16 md:-mt-[84px] md:-ml-[105px] rounded-full" id="btn-mini"
+      initial={{ y: -2050 }}
+      animate={{ y: 0 }}
+      transition={{ delay: 1.2, duration: 1, type: 'spring' }}
+    />
+    <motion.img src={discord} className="w-16 h-16 md:min-w-16 md:h-16 md:mt-[5px]  md:-ml-[190px]   rounded-full" id="btn-mini"
+      initial={{ y: -2050 }}
+      animate={{ y: 0 }}
+      transition={{ delay: 1.3, duration: 1, type: 'spring' }}
+    />
+  </div>
+
+
+
+
+       </motion.div>
+
+       
+       </section>   
+     
+    )
+}
+export default Home; 
+
+
+
+
+{/* <div className=" md:flex md:flex-col  ">
+           <motion.img src={gmail} className="   min-w-16 md:h-16 md:mt-48 -ml-48  rounded-full  " id="btn-mini" 
            initial={{y:-2050}}
            animate={{y:0}}
            transition={{delay:1.0,duration:1,type:'spring'}}
@@ -137,19 +176,4 @@ const Home = ()=>{
             transition={{delay:1.3,duration:1,type:'spring'}}
            ></motion.img>
        
-       </div> 
-       
-
-       </motion.div>
-
-       
-       </section>   
-     
-    )
-}
-export default Home; 
-
-
-
-
-
+       </div>  */}
