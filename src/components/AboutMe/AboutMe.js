@@ -31,62 +31,129 @@ const AboutMe = () => {
 
   let latteArt = [latteArt2, latteArt3, latteArt4, latteArt5, latteArt1,];
   return (
-    <div>
-        <motion.div  id="aboutMe" className='mb-0'>
-                    <motion.h1 className="font-techno mt- mb-4 text-center text-4xl font-extrabold"
-                      initial={{ opacity: 0, translateX:"-100%" }}
-                      whileInView={{ opacity: 1, translateX:"0"}}
-                      transition={{duration:1, type:'tween', stiffness:50}}
-                      
-                    >About me</motion.h1>
-                    <motion.p className="font-techno text-lg mx-20"
-                      initial={{ opacity: 0, translateX:"-100%" }}
-                      whileInView={{ opacity: 1, translateX:"0"}}
-                      transition={{duration:1, type:'tween', stiffness:50}}
-                    > 
-                        <p className='text-center'> Other than coding, i like exploring new hobbies every now and then, we could say I am a Jack of all but master of none. 
-                        My Recent addiction is Chess and I am trying to learn more about it. I am still an amatuer but I still up for a game xD.</p>
-                    <motion.button id="btn-mini" className=" text-2xl font-techno rounded-md ml-[45%]"
+    
+        <motion.div  id="aboutMe" className='mb-0 flex flex-col font-techno text-sm md:text-lg mx-3 md:mx-20'>
+                    <h1 className="font-techno md:mt-2 mb-2 text-center text-3xl md:text-5xl font-extrabold"    
+                    >
+                      <Typewriter
+                    words={[
+                    'ABOUT ME'
+                    ]}
+                    cursor
+                    cursorStyle="."
+                    typeSpeed={20}
+                    deleteSpeed={0}
+                    delaySpeed={10}
+                    /></h1>
+                    
+                        <p className=' text-center font-techno text-sm md:text-lg mx-3 md:mx-20'>
+                          <Typewriter
+                           words={[
+                            ' Other than coding, i like exploring new hobbies every now and then. My Recent addiction is Chess and I just started learning  about it. I am still up for a game though xD.'
+                           ]}
+                           cursor
+                           cursorStyle="|"
+                           typeSpeed={20}
+                           deleteSpeed={0}
+                           delaySpeed={1000}
+                          />
+                          </p>
+                    <a href='https://link.chess.com/play/ssx9Jh' target='_blank' className='ml-auto mr-auto'><motion.button id="btn-mini" className=" text-base mt-2  md:mt-3 ml-auto mr-auto md:text-2xl font-techno  "
                               initial={{y:-2050}}
                               animate={{y:0}}
                               transition={{delay:0.4,duration:1,type:'spring'}}
-                            >challenge
-                    </motion.button>
-                        <br/>
-                        
-                         > I am a professional cricket and a basketball player. 
-                            <br/>
-                         > I also do some sketching in leisure time and below are some of the paintings. 
-                            <br/>
-                          Initially I was forced to pursue sketching and drawing when I was 8 years old but later I started growing intrest towards during my high school 
-                          and I wanted to explore digital art as well.
-                            <br/>
-                        <span className="mx-16 ">Following are few my sketches.</span>
-                        <br/>
-                        < Carousel data={art}></Carousel>
-                        > I practice calisthenics, running and swimming regulary to keep myself fit. I have been doing calisthenics since the first year of my bachelors
-                          and it really helps me in playing in different sports as well. 
-                          <Carousel data={workout}></Carousel>
-                        > Right now, I am working as a part time Barista at Starbucks, Athlone and I am working on getting my latte arts right as well
-                          and below are few pictures:
-                          <Carousel data={latteArt}></Carousel>
-
-                    </motion.p>
-                    
-                    <motion.div
-                    initial={{ opacity: 0, translateX:"-100%" }}
+                            >play a game with me 
+                    </motion.button></a>
+                     
+                      <p classname='text-center font-techno text-sm md:text-lg mx-3 md:mx-20'>
+                       
+                    < motion.div className=' p-2 rounded-2xl md:rounded-full  dark:bg-yellow-300  mt-2  md:mb-0 md:text-center'
+                          initial={{ opacity: 0, translateX:"-2050" }}
+                          whileInView={{ opacity: 1, translateX:"0"}}
+                          transition={{delay:0.3,duration:1, type:'tween', stiffness:50}}
+                          viewport={{ once: true, amount: 0.2 }} 
+                    >
+                    <motion.div className='md:ml-auto md:mx-auto md:px-4'
+                    initial={{ opacity: 0, translateX:"-50%" }}
                     whileInView={{ opacity: 1, translateX:"0"}}
-                    transition={{duration:1, type:'tween', stiffness:50}}
-                    className=""
-                   >
-            
+                    transition={{delay:0.3,duration:1, type:'tween', stiffness:50}}
+                    viewport={{ once: true, amount: 0.2 }} 
+                    > < Carousel data={art}></Carousel></motion.div>     
+                           <p className=''>
+                           <Typewriter
+                                        words={[
+                                        '  > I am a professional cricket and a basketball player. '
+                                        ]}
+                                        cursor
+                                        cursorStyle=""
+                                        typeSpeed={20}
+                                        deleteSpeed={0}
+                                        delaySpeed={10}
+                                        />
 
-                
-            </motion.div>
+                                                <br/>
+                                                <Typewriter
+                                        words={[
+                                        ' > I also do some sketching in leisure time and below are some of the sketches.  '
+                                        ]}
+                                        cursor
+                                        cursorStyle=""
+                                        typeSpeed={20}
+                                        deleteSpeed={0}
+                                        delaySpeed={10}
+                                        />
+                           </p>
+                                              
+                                            
+                                               
+                    </motion.div>
 
-            
+                    <motion.div className='p-2 rounded-2xl md:rounded-full  bg-yellow-300 mt-4  md:text-center'
+                     initial={{ opacity: 0, translateX:"-50%" }}
+                     whileInView={{ opacity: 1, translateX:"0"}}
+                     transition={{delay:0.3,duration:1, type:'tween', stiffness:50}}
+                     viewport={{ once: true, amount: 0.4 }} 
+                    >
+                    <Carousel data={workout}></Carousel>
+                            <Typewriter
+                    words={[
+                    ' > I practice calisthenics, running and swimming regulary to keep myself fit.  '
+                    ]}
+                    cursor
+                    cursorStyle=""
+                    typeSpeed={20}
+                    deleteSpeed={0}
+                    delaySpeed={10}
+                    />                     
+                  
+                          
+                    </motion.div>
+
+                    <motion.div className='p-2 rounded-2xl md:rounded-full  bg-yellow-300     md:text-center '
+                    initial={{ opacity: 0, translateX:"-50%" }}
+                    whileInView={{ opacity: 1, translateX:"0"}}
+                    transition={{delay:0.3,duration:1, type:'tween', stiffness:50}}
+                    viewport={{ once: true, amount: 0.2 }} 
+                    >
+                    <Carousel data={latteArt}></Carousel>
+                         <p className='md:mx-36'>
+                          <Typewriter
+                    words={[
+                    '   > Right now, I am working as a part time Barista at Starbucks and I am working on my latte arts as well. '
+                    ]}
+                    cursor
+                    cursorStyle=""
+                    typeSpeed={20}
+                    deleteSpeed={0}
+                    delaySpeed={10}
+                    />                
+                         </p>  
+                          
+                    </motion.div>
+                      </p>
+
         </motion.div>
-    </div>
+    
   )
 }
 

@@ -31,7 +31,7 @@ const Home = ()=>{
 
         
        <section id="home">
-       <motion.div className="  mt-12  lg:mx-20 md:flex md:flex-row  justify-between z-20 lg:border-8 font-techno rounded-3xl border-orange-400 mb-16  "
+       <motion.div className="  mt-12 2xl:mt-28 lg:mx-20 md:flex md:flex-row  justify-between z-20 lg:border-8 font-techno rounded-3xl border-orange-400  "
        initial={{y:-2050}}
        animate={{y:0}}
        transition={{delay:0.3,duration:1,type:'spring'}}
@@ -46,11 +46,15 @@ const Home = ()=>{
        </div>
        <div className=" md:my-6 flex flex-col  text-center items-start   w-full lg:w-1/3 px-4">
        {/* md:w-80 h-80 -ml-44 rounded-full */}
+           
+        
            <motion.img src={heroImg} className=" mx-auto rounded-full md:-ml-44   " 
            initial={{y:-2050}}
            animate={{y:0}}
            transition={{delay:0.7,duration:1,type:'spring'}}
            ></motion.img>
+       
+           
          
            <motion.h1 className='text-4xl ml-auto mr-auto md:-ml-52 md:text-5xl font-bold mt-4 mb-2'
            initial={{y:-2050}}
@@ -106,37 +110,60 @@ const Home = ()=>{
            
            
            </motion.p>  
-           <a href={cv} download> 
-            <motion.button id="btn-mini" className="  ml-[80%] mt-6 md:-ml-[78px] text-3xl font-techno "
+        
+           {/* <a href={cv} target="_blank" > 
+            <motion.button id="btn-mini" className="ml-[78%]  mt-6 md:-ml-[78px] text-3xl font-techno transition-transform transform hover:scale-110"
              initial={{y:-2050}}
              animate={{y:0}}
              transition={{delay:0.9,duration:1,type:'spring'}}
             >Resume</motion.button>
-           </a> 
+           </a>  */}
+            <a href={cv} target="_blank">
+  <motion.button
+    id="btn-mini"
+    className="ml-[78%] mt-6 md:-ml-[78px] text-3xl font-techno transform transition-transform duration-300 hover:scale-110"
+    initial={{ y: -2050 }}
+    animate={{ y: 0 }}
+    transition={{ delay: 0.9, duration: 1, type: 'spring' }}
+    whileHover={{ scale: 1.1 }} // Motion hover effect
+  >
+    Resume
+  </motion.button>
+</a> 
+
+         
        </div>
        
   
        <div className="flex mt-8 gap-6 justify-center  md:flex md:flex-col">
-    <motion.img src={gmail} className="w-16 h-16 md:min-w-16 md:h-16 md:-ml-48 rounded-full md:-mt-20" id="btn-mini"
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vigneshrajr@outlook.com" 
+   target="_blank" 
+   rel="noopener noreferrer"><motion.img src={gmail} className="w-16 h-16 md:min-w-16 md:h-16 md:-ml-48 rounded-full md:-mt-[80px] " id="btn-mini"
       initial={{ y: -2050 }}
       animate={{ y: 0 }}
       transition={{ delay: 1.0, duration: 1, type: 'spring' }}
-    />
-    <motion.img src={githubLight} className="w-16 h-16 md:min-w-16 md:h-16 md:mt-4 md:-ml-[275px] rounded-full" id="btn-mini"
+    /></a>
+    <a href="https://github.com/VigneshwarRaj7" target="_blank">
+    <motion.img src={githubLight} className="w-16 h-16 md:min-w-16 md:h-16 md:-mt-3 md:-ml-[275px] rounded-full" id="btn-mini"
       initial={{ y: -2050 }}
       animate={{ y: 0 }}
       transition={{ delay: 1.1, duration: 1, type: 'spring' }}
     />
-    <motion.img src={linkedinLight} className="w-16 h-16 md:min-w-16 md:h-16 md:-mt-[84px] md:-ml-[105px] rounded-full" id="btn-mini"
+    </a>
+    <a href="https://www.linkedin.com/in/vigneshwar-raj-rajagopalan-ba9511163/" target="_blank">
+    <motion.img src={linkedinLight} className="w-16 h-16 md:min-w-16 md:h-16 md:-mt-[135px] md:-ml-[110px] rounded-full" id="btn-mini"
       initial={{ y: -2050 }}
       animate={{ y: 0 }}
       transition={{ delay: 1.2, duration: 1, type: 'spring' }}
     />
-    <motion.img src={discord} className="w-16 h-16 md:min-w-16 md:h-16 md:mt-[5px]  md:-ml-[190px]   rounded-full" id="btn-mini"
+    </a>
+    <a className="" href='https://discord.gg/yZepKt29' target="_blank">
+    <motion.img src={discord} className="w-16 h-16 md:min-w-16 md:h-16 md:-mt-12  md:-ml-[190px]   rounded-full" id="btn-mini"
       initial={{ y: -2050 }}
       animate={{ y: 0 }}
       transition={{ delay: 1.3, duration: 1, type: 'spring' }}
     />
+    </a>
   </div>
 
 

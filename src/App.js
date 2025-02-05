@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import { Outlet } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import PacmanLoader from "react-spinners/PacmanLoader";
+import Footer from './components/Footer/Footer';
 
 function App() {
  
@@ -19,6 +20,7 @@ function App() {
         <div>
           <Header/>
           <Outlet/>
+          <Footer/>
         </div>
       
       {/* <header className="App-header">

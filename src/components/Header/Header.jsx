@@ -62,10 +62,9 @@ const Header = () => {
       {isOpen && (
         <div className="relative h-auto ">
             <ul className="  z-10 flex flex-col top-[100%]  left-0 w-full items-center space-y-4 py-5 font-techno font-semibold text-lg">
-                <li>Home</li>
-                <li>projects</li>
-                <li>About me</li>
-                <li>Experience</li>
+                <Link to='/projects'> <li>projects</li></Link>
+                <Link to='/aboutme'><li>About me</li></Link>
+                <Link to='experience'><li>Experience</li></Link>
             </ul>
         </div>
       )}
