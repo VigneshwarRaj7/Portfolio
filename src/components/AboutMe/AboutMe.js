@@ -82,7 +82,7 @@ const AboutMe = () => {
                            <p className=''>
                            <Typewriter
                                         words={[
-                                        '  > I am a professional cricket and a basketball player. '
+                                        '  > I am a professional cricket player and an athlete. '
                                         ]}
                                         cursor
                                         cursorStyle=""
@@ -94,7 +94,7 @@ const AboutMe = () => {
                                                 <br/>
                                                 <Typewriter
                                         words={[
-                                        ' > I also do some sketching in leisure time and below are some of the sketches.  '
+                                        ' > I also do some sketching in leisure time and above are some of the sketches.  '
                                         ]}
                                         cursor
                                         cursorStyle=""

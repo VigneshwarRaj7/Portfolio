@@ -18,7 +18,7 @@ import { Typewriter } from 'react-simple-typewriter';
 function Experience() {
   return (
     <div>
-          <h1 className="font-techno md:mt-8 mb-4 text-center text-4xl md:text-5xl font-extrabold"    
+          <h1 className="font-techno md:mt-8 mb-1 text-center text-4xl md:text-5xl font-extrabold"    
                               >
                                 <Typewriter
                               words={[
@@ -31,19 +31,7 @@ function Experience() {
                               delaySpeed={10}
                               /></h1>
 
-<h6 className='mt-4 mx-2 md:ml-28 md:mr-28 font-techno md:text-2xl '>
-<Typewriter
-                              words={[
-                              'Following are the technologies i have worked with:'
-                              ]}
-                              cursor
-                              cursorStyle="."
-                              typeSpeed={20}
-                              deleteSpeed={0}
-                              delaySpeed={10}
-                              />
-                
-          </h6> 
+
           {/* <div class="flex  justify-center   ">
               <div class="grid grid-cols-4 md:gap-y-10 border-2 border-black min-w-[900px] pl-24 mt-4 mb-6">
                   <div>
@@ -164,6 +152,19 @@ function Experience() {
     ><img src={github} className='w-20 sm:ml-3 md:mx-8   sm:w-28 mt-4 sm:mt-12' /></motion.div>
   </motion.div>
 </div>
+<h6 className='mt-4 mx-2 md:ml-28 md:mr-28 font-techno md:text-2xl '>
+<Typewriter
+                              words={[
+                              'Above are the technologies i have worked with.'
+                              ]}
+                              cursor
+                              cursorStyle="."
+                              typeSpeed={20}
+                              deleteSpeed={0}
+                              delaySpeed={10}
+                              />
+                
+          </h6> 
           <div className='mt-4 mx-2 md:ml-28 md:mr-28 font-techno md:text-xl'>
           <p class=""> 
           <Typewriter

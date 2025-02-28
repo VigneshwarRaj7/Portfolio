@@ -48,7 +48,7 @@ const Home = ()=>{
        {/* md:w-80 h-80 -ml-44 rounded-full */}
            
         
-           <motion.img src={heroImg} className=" mx-auto rounded-full md:-ml-44   " 
+           <motion.img src={heroImg} className=" mx-auto w-56 md:w-[320px] rounded-full md:-ml-44   " 
            initial={{y:-2050}}
            animate={{y:0}}
            transition={{delay:0.7,duration:1,type:'spring'}}
