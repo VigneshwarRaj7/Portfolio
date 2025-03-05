@@ -12,6 +12,7 @@ module.exports = {
         lg: "1024px", // Large screens
         xl: "1280px", // Extra large screens
         "2xl": "1536px", // 2x extra large screens
+        "3xl": "1800px", // 2x extra large screens
       },
     },
   },

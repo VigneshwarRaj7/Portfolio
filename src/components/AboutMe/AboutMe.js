@@ -58,7 +58,7 @@ const AboutMe = () => {
                            delaySpeed={1000}
                           />
                           </p>
-                    <a href='https://link.chess.com/play/ssx9Jh' target='_blank' className='ml-auto mr-auto'><motion.button id="btn-mini" className=" text-base mt-2  md:mt-3 ml-auto mr-auto md:text-2xl font-techno  "
+                    <a href='https://link.chess.com/play/tntXYp' target='_blank' className='ml-auto mr-auto'><motion.button id="btn-mini" className=" text-base mt-2  md:mt-3 ml-auto mr-auto md:text-2xl font-techno  "
                               initial={{y:-2050}}
                               animate={{y:0}}
                               transition={{delay:0.4,duration:1,type:'spring'}}
@@ -82,7 +82,7 @@ const AboutMe = () => {
                            <p className=''>
                            <Typewriter
                                         words={[
-                                        '  > I am a professional cricket player and an athlete. '
+                                        ' > I also do some sketching in leisure time and above are some of the sketches.  '
                                         ]}
                                         cursor
                                         cursorStyle=""
@@ -90,11 +90,10 @@ const AboutMe = () => {
                                         deleteSpeed={0}
                                         delaySpeed={10}
                                         />
-
                                                 <br/>
-                                                <Typewriter
+                          <Typewriter
                                         words={[
-                                        ' > I also do some sketching in leisure time and above are some of the sketches.  '
+                                        '  > I am a professional cricket player and an athlete. '
                                         ]}
                                         cursor
                                         cursorStyle=""

@@ -169,7 +169,7 @@ function Experience() {
           <p class=""> 
           <Typewriter
                               words={[
-                              'I worked as a frontend developer for Tata Consultancy Services for around 2.5 years. I mainly used ReactJ framework and was involved in maintaining and transforming a legacy project. It was an internal billing application for the clients. Following were my responsiblities.'
+                              'I worked as a Software Engineer for Tata Consultancy Services for around 2.5 years. I mainly used ReactJS framework and Python  and was involved in maintaining and transforming a legacy project.'
                               ]}
                               cursor
                               cursorStyle="."
@@ -180,7 +180,7 @@ function Experience() {
                 
           </p>
       
-          <div className='flex  mb-1'>
+          {/* <div className='flex  mb-1'>
             <p class=" mr-2 font-normal font-techno"> > </p>
             <p class=" font-normal  font-techno"> 
             <Typewriter
@@ -305,7 +305,7 @@ function Experience() {
                               delaySpeed={10}
                               />  
             </p>
-          </div>
+          </div> */}
           </div>
 
           <div>

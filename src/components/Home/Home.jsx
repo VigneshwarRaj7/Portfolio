@@ -31,7 +31,7 @@ const Home = ()=>{
 
         
        <section id="home">
-       <motion.div className="  mt-12 2xl:mt-28 lg:mx-20 md:flex md:flex-row  justify-between z-20 lg:border-8 font-techno rounded-3xl border-orange-400  "
+       <motion.div className="  mt-12  2xl:mt-16 lg:mx-20 md:flex md:flex-row  justify-between z-20 lg:border-8 font-techno rounded-3xl border-orange-400  "
        initial={{y:-2050}}
        animate={{y:0}}
        transition={{delay:0.3,duration:1,type:'spring'}}

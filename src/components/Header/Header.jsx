@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <motion.header className="top-0  z-20 m-6 "
+    <motion.header className="top-0  z-20 m-6 lg:m-6 2xl:m-10 3xl:m-12"
     initial={{y:-2050}}
     animate={{y:0}}
     transition={{delay:0.3,duration:1,type:'spring'}}
